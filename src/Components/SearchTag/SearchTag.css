@@ -1,0 +1,35 @@
+.searchTag{
+  display:inline-block;
+  width: auto;
+  background-color: #DCDCDC;
+  margin: 15px;
+  padding: 7px;
+  border-radius: 35px;
+  transition: 0.1s;
+}
+.searchTag:hover{
+  cursor: pointer;
+  background-color:#D8BFD8;
+  transition: 0.1s;
+}
+  .searchTag .tagDismiss{
+      color: inherit;
+      border:none;
+      background:none;
+      margin-left: 4px;
+      transition: 0.1s;
+    }
+  .searchTag .tagDismiss:hover{
+        color: inherit;
+        cursor: inherit;
+        transition: 0.1s;
+      }
+
+
+@media screen and (max-width: 1250px) {
+
+}
+
+@media screen and (max-width: 860px) {
+
+}

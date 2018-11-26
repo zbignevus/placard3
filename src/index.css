@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+*{
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+.app-container{
+  display:grid;
+  grid-gap: 20px;
+  grid-template-columns: auto;
+  background-color: #778899;
+  color: #fff;
+
+}
+
+  .app-container .top-container{
+      display:grid;
+      grid-template-columns: auto;
+      grid-gap: 20px;
+      background: #5F9EA0;
+
+    }
+
+
+      .app-container .top-container .searchField-container {
+      margin-top: 30px;
+      text-align: center;
+      color:  #C7C7CD;
+      }
+
+      .app-container .top-container .searchField-container .logo{
+        font-size: 2vmin;
+        color: #00FF00;
+        font-family: 'Bangers', cursive;
+        margin-bottom: 10px;
+      }
+
+
+      .app-container .top-container .searchField-container > input {
+          width: 60%;
+          transition: 0.2s;
+          height: 50px;
+          border:none;
+          border-radius: 35px;
+          font-size: 20px;
+          text-indent: 40px;
+        }
+
+      .app-container .top-container .searchTags-container{
+        text-align: center;
+      }
+
+
+
+
+
+      .app-container .content-container .content-container-row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 4px;
+      }
+
+        .app-container .content-container .content-container-column{
+          flex: 25%;
+          max-width: 25%;
+          padding: 0 4px;
+        }
+
+    /* Image result Component styling begins*/
+    .app-container .content-container .content-container-row .content-container-column .content-result-container{
+      margin-top: 8px;
+      vertical-align: middle;
+      position: relative;
+      filter: brightness(100%);
+    }
+
+
+    .app-container .content-container .content-container-row .content-container-column .content-result-container:hover {
+
+        transition: all 0.5s ease;
+      }
+      .app-container .content-container .content-container-row .content-container-column .content-result-container:hover {
+        filter: brightness(80%);
+      }
+      .app-container .content-container .content-container-row .content-container-column .content-result-container:hover .download-icon {
+          opacity: 1;
+          transition: 0.5s;
+        }
+      .app-container .content-container .content-container-row .content-container-column .content-result-container:hover .result-author-avatar {
+          opacity: 1;
+          transition: 0.5s;
+        }
+      .app-container .content-container .content-container-row .content-container-column .content-result-container:hover .result-author-image {
+          opacity: 1;
+          transition: 0.5s;
+        }
+        .app-container .content-container .content-container-row .content-container-column .content-result-container:hover .result-author-image a{
+          color: #F0FFFF;
+        }
+
+     
+    /* Image result Component styling ends */
+
+  .app-container .footer-container{
+    margin-top: 20px;
+    background-color: #696969;
+    text-align: center;
+    }
+
+
+@media screen and (max-width: 1250px) {
+
+}
+
+@media only screen and (max-width: 1000px) {
+.app-container .top-container .searchField-container > input {
+    width: 100%;
+    border-radius: 0px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+}
+@media screen and (max-width: 860px) {
+  .app-container .content-container .content-container-column{
+    flex: 97%;
+    max-width: 97%;
+  }
+  .app-container .top-container .searchField-container .logo{
+    font-size: 18px;
+  }
+
+  .app-container .content-container .content-container-row{
+    justify-content: center;
+  }
+}
